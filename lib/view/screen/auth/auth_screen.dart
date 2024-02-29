@@ -40,7 +40,6 @@ class AuthScreen extends StatelessWidget{
                   const SizedBox(height: Dimensions.topSpace),
                   Image.asset(Images.logoWithNameImage, height: 150, width: 200),
 
-
                   Padding(
                     padding: const EdgeInsets.all(Dimensions.marginSizeLarge),
                     child: Stack(
@@ -75,8 +74,6 @@ class AuthScreen extends StatelessWidget{
                                 ),
                               ),
                               const SizedBox(width: Dimensions.paddingSizeExtraLarge),
-
-
                               InkWell(
                                 onTap: () => pageController.animateToPage(1,
                                     duration: const Duration(seconds: 1), curve: Curves.easeInOut),
@@ -95,14 +92,12 @@ class AuthScreen extends StatelessWidget{
                                   ],
                                 ),
                               ),
-
                             ],
                           ),
                         ),
                       ],
                     ),
                   ),
-
 
                   Expanded(
                     child: Consumer<AuthProvider>(
